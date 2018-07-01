@@ -2,40 +2,43 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @event.title %>
-</p>
+<div class="row">
+  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
+    <h1><%= @event.title %></h1>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+    <p>
+      <strong>Descrição:</strong>
+      <%= @event.description %>
+    </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @event.body %>
-</p>
+    <p>
+      <strong>Evento:</strong>
+      <%= @event.body %>
+    </p>
 
-<p>
-  <strong>Local:</strong>
-  <%= @event.local %>
-</p>
+    <p>
+      <strong>Local:</strong>
+      <%= @event.local %>
+    </p>
 
-<p>
-  <strong>Day:</strong>
-  <%= @event.day %>
-</p>
+    <p>
+      <strong>Dia:</strong>
+      <%= @event.day %>
+    </p>
 
-<p>
-  <strong>Organization:</strong>
-  <%= @event.organization %>
-</p>
+    <p>
+      <strong>Organização:</strong>
+      <%= @event.organization %>
+    </p>
 
-<p>
-  <strong>Slug:</strong>
-  <%= @event.slug %>
-</p>
+    <p>
+      <strong>Endereço 'web':</strong>
+      localhost:3000/events/<%=@event.slug %>
+    </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+    <%= link_to 'Edit', edit_event_path(@event) %> |
+    <%= link_to 'Back', events_path %>
+  </div>
+</div>
+
+
