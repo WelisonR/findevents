@@ -1,3 +1,5 @@
+<div class="blocktext">
+
 <%= form_with(model: event, local: true) do |form| %>
   <% if event.errors.any? %>
     <div id="error_explanation">
@@ -11,42 +13,36 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="form-group">
+    <%= form.text_field :title, placeholder: 'Título', class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-group">
+    <%= form.text_field :description, placeholder: 'Descrição', class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
+  <div class="form-group">
+    <%= form.text_field :image_url, placeholder: 'Imagem URL', class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_field :body %>
+  <div class="form-group">
+    <%= form.text_field :local, placeholder: 'Local', class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :local %>
-    <%= form.text_field :local %>
+  <div class="form-group">
+    <%= form.text_field :day, placeholder: 'Data', class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :day %>
-    <%= form.text_field :day %>
+  <div class="form-group">
+    <%= form.text_field :organization, placeholder: 'Organização', class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :organization %>
-    <%= form.text_field :organization %>
+  <div class="form-group">
+    <%= form.text_area :body, placeholder: 'Informações', class: 'form-control' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Criar Evento", class: "btn btn-primary btn-block btn-lg" %>
   </div>
 <% end %>
+</div>

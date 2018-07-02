@@ -1,7 +1,14 @@
 <% provide(:page_title, 'Novo evento')%>
 
-<h1>New Event</h1>
+<div class="blocktext">
+    <h1 class="text-center">Novo Evento</h1>
+    <hr>
+</div>
 
 <%= render 'form', event: @event %>
 
-<%= link_to 'Back', events_path %>
+<div class="blocktext">
+
+<%= link_to 'Back', events_path, class: "btn btn-primary btn-block btn-lg"  %>
+
+</div>

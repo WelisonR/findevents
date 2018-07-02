@@ -42,27 +42,33 @@
           font-size: 0.9rem;
           color: black;
         }
-  
+
       }
     }
   }
-  
+
   @media screen and (min-width: 34em) {
     .events.index .card {
       height: 440px;
     }
   }
-  
+
   /* Medium. Above 48em (768px) */
   @media screen and (min-width: 48em) {
     .events.index .card {
       height: 420px;
     }
   }
-  
+
   /* Extra large. Above 75em (1200px) */
   @media screen and (min-width: 75em) {
     .events.index .card {
       height: 415px;
     }
+  }
+
+  .blocktext{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em
   }
