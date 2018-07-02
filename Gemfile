@@ -5,12 +5,14 @@ ruby '2.5.1'
 
 # Gem 'bootstrap' to provide style to application
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
-
 # Jquery dependence to bootstrap
 gem 'jquery-rails'
-
 # Gem 'friendly' to personalize url's
 gem 'friendly_id', '~> 5.1.0' #Note: You MUST use 5.0.0 or greater for Rails 4.0+
+# Gem 'devise' - authentication purposes
+gem 'devise'
+# Gem 'devise-bootstrapped' - style to devise views
+gem 'devise-bootstrapped'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'

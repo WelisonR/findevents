@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :superusers
   get 'abouts/show'
   root to: 'events#index'
   resources :events
