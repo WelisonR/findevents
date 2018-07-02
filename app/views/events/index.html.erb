@@ -3,3 +3,5 @@
 <div class="row">
   <%= render @events %>
 </div>
+
+<%= will_paginate @events, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, previous_label: "Antigo", next_label: "Novo", inner_window: 2 %>
