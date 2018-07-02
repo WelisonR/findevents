@@ -1,49 +1,53 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 <% provide(:page_title, @event.title)%>
 
 <p id="notice"><%= notice %></p>
 
-<div class="row">
-  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
-    <h1><%= @event.title %></h1>
+<div class="container">
+    <div class="well">
+        <div class="row">
+             <div class="col-md-12">
+                 <div class="row hidden-md hidden-lg"><h1 class="text-center" ><%= @event.title %></h1></div>
+                 <div class="pull-left col-md-4 col-xs-12 thumb-contenido"><img class="center-block img-responsive" src='<%= @event.image_url %>'/></div>
+                 <div class="">
+                     <h1 class="hidden-xs hidden-sm"><%= @event.title %></h1>
+                     <h3 class="hidden-xs hidden-sm"><%= @event.description %></h3>
+                     <hr>
 
-    <p>
-      <strong>Descrição:</strong>
-      <%= @event.description %>
-    </p>
+                     <p><strong>Data: </strong><%= @event.day %><br>
+                       <br>
+                     <strong>Organização: </strong><%= @event.organization %><br>
+                       <br>
+                     <strong>Local: </strong><%= @event.local %></p>
+                     <hr>
 
-    <p>
-      <strong>Evento:</strong>
-      <%= @event.body %>
-    </p>
-
-    <p>
-      <strong>Local:</strong>
-      <%= @event.local %>
-    </p>
-
-    <p>
-      <strong>Dia:</strong>
-      <%= @event.day %>
-    </p>
-
-    <p>
-      <strong>Organização:</strong>
-      <%= @event.organization %>
-    </p>
-
-    <p>
-      <strong>Endereço 'web':</strong>
-      localhost:3000/events/<%=@event.slug %>
-    </p>
-
+                    <p class="text-justify">
+                      <%= @event.body %>
+                    </p>
+             </div>
+        </div>
+    </div>
     <% if superuser_signed_in? %>
-      <%= link_to 'Deletar', event_path(@event), method: :delete %> |
-      <%= link_to 'Editar', edit_event_path(@event) %> |
-      <%= link_to 'Voltar', events_path %>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="blocktext-show">
+          <%= link_to 'Editar', edit_event_path(@event), class: "btn btn-primary btn-block btn-xs"  %>
+          <%= link_to 'Voltar', events_path, class: "btn btn-primary btn-block btn-xs"  %>
+          <%= link_to 'Deletar', event_path(@event), method: :delete, class: "btn btn-danger btn-block btn-xs" %>
+        </div>
+      </div>
+    </div>
     <% else %>
-      <%= link_to 'Voltar', events_path %>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="blocktext-show">
+          <%= link_to 'Voltar', events_path, class: "btn btn-primary btn-block btn-xs"  %>
+        </div>
+      </div>
+    </div>
     <% end %>
   </div>
 </div>
-
-

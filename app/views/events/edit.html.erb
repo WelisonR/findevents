@@ -1,8 +1,14 @@
 <% provide(:page_title, "Editar #{@event.title}")%>
 
-<h1>Editing Event</h1>
+<div class="blocktext">
+    <h1 class="text-center">Editar Evento</h1>
+    <hr>
+</div>
 
 <%= render 'form', event: @event %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+<div class="blocktext-login">
+
+  <%= link_to 'Mostrar', @event, class: "btn btn-primary btn-block btn-lg"  %>
+  <%= link_to 'Voltar', events_path, class: "btn btn-primary btn-block btn-lg"  %>
+</div>
