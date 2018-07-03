@@ -82,12 +82,18 @@
   .blocktext-show{
     margin-left: 1px;
     margin-right: 1px;
-    width: 10em
+    width: 12em
   }
 
   .thumb-contenido{
-
+      height: 300px;
+      width: 500px;
       margin-bottom:1%;
       margin-left: 0px;
       padding-left: 0px;
+  }
+
+  .container img {
+      width: 500px;
+      height: 300px;
   }
