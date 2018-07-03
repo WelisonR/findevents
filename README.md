@@ -1,16 +1,21 @@
 # Exercício Pratico 03 - Orientação a Objetos - Ruby on Rails
 
-Este projeto foi um exercício proposto pela disciplina de Orientação a Objetos da Universidade de Brasília, pelo professor Renato Sampaio
+## PROPOSTA
+Este projeto foi um exercício proposto pela disciplina de Orientação a Objetos da Universidade de Brasília, professor Renato Sampaio.
 
-Tem como objetivo propor que seja desenvolvido uma aplicação web utilizando a linguagem Ruby com o Framework Rails
+Tem como objetivo o desenvolvimento de uma aplicação web utilizando a linguagem Ruby com o Framework Rails.
 
-### Versão do Ruby
+## FINDEVENT
+
+Esta aplicação vem com o propósito de promover eventos artísticos e culturais de uma forma simples e rápida. O serviço disponibiliza a qualquer visitante a possibilidade de difundir informações de eventos através da geração de páginas com "links" e informações personalizadas conforme o usuário, sendo de fácil e veloz manuseio.
+
+## VERSÃO DO RUBY
   Nessa aplicação estaremos utilizando a versão 2.5.1 do Ruby
 
-### Dependências do Sistema
+## DEPENDÊNCIAS DO SISTEMA
   É necessário que em seu computador esteja instalado o Ruby (2.5.1), e as Gems, Bundler e Rails.
 
-### Configuração do Sistema
+### CONFIGURAÇÃO DO SISTEMA
 
 Execute as instruções abaixo para a instalações e configurações de dependências.
 
@@ -90,7 +95,7 @@ $ sudo apt-get install nodejs
 
 * Após a instalação do Ruby, Rails, Bundler e Sqlite, escolha um diretório no seu computador e execute:
 ```
-$ git clone git@gitlab.com:xRegis/EP3-RAILS.git
+$ git clone https://gitlab.com/xRegis/EP3-RAILS.git
 ```
 
 * Após o termino do download, acesse o diretório via terminal e execute:
@@ -104,12 +109,25 @@ $ rails server
 
 e então acesse [localhost](localhost:3000) no seu navegador.
 
-### Serviços
+## DESCRIÇÃO DA ESTRUTURA
 
-Esta aplicação vem com o proposito de promover eventos artisticos e culturais de uma forma simples e rápida. Sabemos que o consumo de entretenimento e cultura é bastante importante para o corpo e para a mente, e gostariamos de fazer a promoção de tais eventos de uma forma inteligente, simples e rápida. Você poderá encontrar referencias aos eventos que mais te interessam perto de você, e aproveitar isso da melhor forma possível.
+Ao entrar na aplicação, o usuário irá se deparar com a seguinte estrutura:
+
+* Página principal: apresenta todos os eventos já criados dentro da plataforma, é ordenada e possui paginação de seis em seis eventos.
+* Área "sobre": aborda sobre a aplicação e seus objetivos propriamente ditos.
+* Área "criar evento": possibilita a criação de um evento desde que seja preenchida todas as áreas necessárias.
+* Área "área restrita": área reservada para 'login' de moderadores.
+
+É livre a criação de "eventos" por qualquer usuário, sendo reservado aos moderadores (superusuários) a supervisão de tais conteúdos através de edição e exclusão de eventos.
+
+Caso tenha seguido os passos anteriores, estará disponível o seguinte moderador:  
+Email: "superuser1@superuser.com".  
+Senha: "user123".  
+
+Informações complementares: vide PDF.
 
 ### Idealizadores
 
-Dâmaso Júnio Pereira Brasileo
+Dâmaso Júnio Pereira Brasileo.
 
-Welison Lucas Almeida Regis
+Welison Lucas Almeida Regis.
