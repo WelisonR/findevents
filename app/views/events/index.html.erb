@@ -4,4 +4,5 @@
   <%= render @events %>
 </div>
 
+<%# Personalize the WillPaginate default pagination %>
 <%= will_paginate @events, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, previous_label: "Anterior", next_label: "Próximo", inner_window: 2 %>

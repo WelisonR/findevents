@@ -1,5 +1,7 @@
 class Event < ApplicationRecord
 
+    has_many :superusers # moderators
+
     # Generate special links to events
     extend FriendlyId
     friendly_id :title, use: :slugged

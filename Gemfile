@@ -13,8 +13,9 @@ gem 'friendly_id', '~> 5.1.0' #Note: You MUST use 5.0.0 or greater for Rails 4.0
 gem 'devise'
 # Gem 'devise-bootstrapped' - style to devise views
 gem 'devise-bootstrapped'
-# Gem 'will_paginate' - limit number of "things" at a certain page
+# Gem 'will_paginate' - limit the number of "things" at a certain page
 gem 'will_paginate', '~> 3.1.0'
+# Gem 'will_paginate-bootstrap4' to personalize the pagination numbers
 gem 'will_paginate-bootstrap4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

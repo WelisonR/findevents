@@ -3,4 +3,6 @@ class Superuser < ApplicationRecord
   # :confirmable, :lockable, :registerable, :timeoutable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
+  
+  has_many :events
 end
